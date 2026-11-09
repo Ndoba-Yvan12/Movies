@@ -162,7 +162,11 @@ function App() {
 <header className="px-6 md:px-12 py-6 flex justify-between items-center relative">
 
   {/* LOGO */}
- <img src = "/logo-removebg-preview.png width = "90px" , height ="50px ">
+  <img
+  src="/movie_bazer_logo.png"
+  alt="Gospel Movies Logo"
+  className="w-40 h-auto mx-auto"
+/>
 
   {/* DESKTOP NAVIGATION */}
   <nav className="hidden md:flex gap-8 text-sm text-gray-300">
@@ -321,7 +325,7 @@ function App() {
 
           <div className="flex items-center gap-4 mb-8">
             <h2 className="font-bold text-xl">
-              <span className="text-yellow-400">!</span> Trending Gospel Movies
+              <span className="text-yellow-400">🔥</span> Trending Gospel Movies
             </h2>
 
             <div className="h-px bg-gray-800 flex-1"></div>
