@@ -60,7 +60,7 @@ function App() {
           <div className="relative flex justify-center items-center h-[350px]">
 
             <img
-              src="https://media.themoviedb.org/t/p/w500/zPHcwBAExP3xfSKLGOuA5qM7Iox.jpg"
+              src="https://tse3.mm.bing.net/th/id/OIP.m8c8ZusyXRZqPiN2zKDuLgHaK8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
               alt="Guardians of the Galaxy"
               className="absolute right-0 top-0 w-36 md:w-48 h-64 object-cover"
             />
