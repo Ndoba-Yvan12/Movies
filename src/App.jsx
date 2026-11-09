@@ -323,7 +323,7 @@ function App() {
 
           <div className="flex items-center gap-4 mb-8">
             <h2 className="font-bold text-xl">
-              <span className="text-yellow-400">🔥</span> Trending Gospel Movies
+              <span className="text-yellow-400">!</span> Trending Gospel Movies
             </h2>
 
             <div className="h-px bg-gray-800 flex-1"></div>
