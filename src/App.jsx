@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
   // TRENDING GOSPEL MOVIES
+  const [menuOpen, setMenuOpen] = useState(false);
   const trendingMovies = [
     {
       title: "The Jesus Film",
@@ -157,22 +158,109 @@ function App() {
     <div className="bg-black min-h-screen text-white">
 
       {/* HEADER */}
-      <header className="px-6 md:px-12 py-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold font-serif">
-          ✝ Gospel Movies<span className="text-purple-500">.</span>
-        </h1>
+      {/* HEADER */}
+<header className="px-6 md:px-12 py-6 flex justify-between items-center relative">
 
-        <nav className="hidden md:flex gap-8 text-sm text-gray-300">
-          <a href="#" className="text-white">Home</a>
-          <a href="#trending">Explore</a>
-          <a href="#trending">Genre</a>
-          <a href="#movies">News</a>
-          <a href="#movies">Movies</a>
-          <a href="#movies">TV Shows</a>
-        </nav>
+  {/* LOGO */}
+  <h1 className="text-2xl font-bold font-serif z-50">
+    ✝ Gospel Movies<span className="text-purple-500">.</span>
+  </h1>
 
-        <button className="md:hidden text-2xl">☰</button>
-      </header>
+  {/* DESKTOP NAVIGATION */}
+  <nav className="hidden md:flex gap-8 text-sm text-gray-300">
+    <a href="#" className="text-white hover:text-purple-400">
+      Home
+    </a>
+
+    <a href="#trending" className="hover:text-purple-400">
+      Explore
+    </a>
+
+    <a href="#trending" className="hover:text-purple-400">
+      Genre
+    </a>
+
+    <a href="#movies" className="hover:text-purple-400">
+      News
+    </a>
+
+    <a href="#movies" className="hover:text-purple-400">
+      Movies
+    </a>
+
+    <a href="#movies" className="hover:text-purple-400">
+      TV Shows
+    </a>
+  </nav>
+
+
+  {/* HAMBURGER BUTTON */}
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    className="md:hidden text-2xl z-50"
+    aria-label="Toggle menu"
+  >
+    {menuOpen ? "✕" : "☰"}
+  </button>
+
+
+  {/* MOBILE NAVIGATION */}
+  <nav
+    className={`absolute top-full left-0 w-full bg-black border-t border-gray-800
+    flex flex-col items-center gap-6 py-8 text-gray-300
+    md:hidden transition-all duration-300 z-40
+    ${menuOpen ? "block" : "hidden"}`}
+  >
+    <a
+      href="#"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      Home
+    </a>
+
+    <a
+      href="#trending"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      Explore
+    </a>
+
+    <a
+      href="#trending"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      Genre
+    </a>
+
+    <a
+      href="#movies"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      News
+    </a>
+
+    <a
+      href="#movies"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      Movies
+    </a>
+
+    <a
+      href="#movies"
+      onClick={() => setMenuOpen(false)}
+      className="hover:text-purple-400"
+    >
+      TV Shows
+    </a>
+  </nav>
+
+</header>
 
 
       {/* MAIN CONTENT */}
