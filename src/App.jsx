@@ -162,7 +162,7 @@ function App() {
 <header className="px-6 md:px-12 py-6 flex justify-between items-center relative">
 
   {/* LOGO */}
- <img src = "/logo-removebg-preview.png">
+ <img src = "/logo-removebg-preview.png width = "90px" , height ="50px ">
 
   {/* DESKTOP NAVIGATION */}
   <nav className="hidden md:flex gap-8 text-sm text-gray-300">
