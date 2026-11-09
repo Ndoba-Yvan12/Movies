@@ -162,9 +162,7 @@ function App() {
 <header className="px-6 md:px-12 py-6 flex justify-between items-center relative">
 
   {/* LOGO */}
-  <h1 className="text-2xl font-bold font-serif z-50">
-    ✝ Gospel Movies<span className="text-purple-500">.</span>
-  </h1>
+ <img src = "/logo-removebg-preview.png"
 
   {/* DESKTOP NAVIGATION */}
   <nav className="hidden md:flex gap-8 text-sm text-gray-300">
